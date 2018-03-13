@@ -1,0 +1,92 @@
+@import 'utils';
+
+.search-panel {
+  margin-top: 78px;
+  padding-bottom: 120px;
+  position: relative;
+
+  @include media("<small") {
+    & {
+      padding-bottom: 80px;
+    }
+  } 
+
+  .dotted_curved_line {
+    background: url('../../../static/images/dotted.svg') 0px 0px no-repeat;
+    height: 160px;
+    width: 594px;
+    position: absolute;
+    left: 327px;
+    top: 79px;
+  }
+  @include media("<huge") {
+    .dotted_curved_line {
+      left: 438px;
+    }
+  }
+  @include media("<medium") {
+    .dotted_curved_line {
+      display: none;
+    }
+  }  
+  .search-box {
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    input {
+      padding: 10px;
+      font-size: 17px;
+      border: 0px solid grey;
+      width: 100%;
+      outline: none;
+
+      &::placeholder {
+        color: #c3c3c3;
+      }
+    }    
+  }
+  @include media("<medium") {
+    .search-box {
+      display: block;
+    }
+  }
+
+  .search-brief {
+    display: flex;
+    color: #ffffff;
+    margin-top: 16px;
+    font-size: 15px;
+    
+    .video-ques {
+      color: rgb(170,170,170);      
+    }
+    .video-circle {
+      background: #fc600f;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      margin: auto;
+      margin-left: 8px;
+      margin-right: 16px;
+    }
+    .yourself-ques {
+      span {
+        font-family: 'Lato-Bold'
+      }
+    }
+    .yourself-here {
+      color: #fc600f;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+  }
+
+  @include media("<medium") {
+    .search-brief {
+      display: none;
+    }
+  }
+}
