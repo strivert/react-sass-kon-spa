@@ -19,3 +19,14 @@ yarn start
 This application uses capistrano for deployment.  Once you have appropriate SSH
 access to the server, deploys can be automated.
 
+
+## Firebase Deployment
+```
+$ npm install -g firebase-tools
+```
+
+```
+$ firebase login
+$ firebase init
+$ firebase deploy
+```

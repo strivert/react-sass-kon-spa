@@ -5,17 +5,16 @@ class SearchBoxContainer extends Component {
   onChange = () => {
   }
 
-  onClick = () => {
-    // alert('Clicked');
-  }
-
   render() {
-    const { onChange, onClick } = this;
+    const { onClick, defaultUrl, disabled, openRecorder } = this.props
 
     return (
       <SearchBox
-        onChange={onChange}
+        openRecorder={openRecorder}
+        defaultUrl={defaultUrl}
+        onChange={this.onChange}
         onClick={onClick}
+        disabled={disabled}
       />
     );
   }

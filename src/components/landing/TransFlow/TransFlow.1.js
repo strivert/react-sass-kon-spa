@@ -26,10 +26,7 @@ class TransFlow extends Component {
       <div className="flow-panel">
         <div className="flow-row-panel">
           <PanelPiece>
-            {collection.video ? 
-              <video src={collection.video} className="video-size" controls /> :
-              <div className="spinner-wrapper"><Spinner /></div>
-            }
+            {collection.video ? <video src={collection.video} className="video-size" controls /> : <span>Loading</span>}
           </PanelPiece>
           <div className="flow-desc-panel">
             <TransDescPiece
@@ -66,7 +63,7 @@ class TransFlow extends Component {
         </div>
         
         <div className="flow-row-panel">
-          <PanelPiece className="video-panel">
+          <PanelPiece>
           {
             collection.video && collection.subtitles ? 
             <video src={collection.video} 
@@ -75,9 +72,10 @@ class TransFlow extends Component {
               crossOrigin="anomymous">
               {collection.subtitles && <track default src={collection.subtitles} />}
             </video> 
-            : <div className="spinner-wrapper">
+            :(<div className="spinner-wrapper">
                 <Spinner />
               </div>
+            )
           }
 
           </PanelPiece>

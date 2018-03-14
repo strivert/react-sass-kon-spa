@@ -11,10 +11,10 @@ const providers = {
 };
 
 const UserButton = (props) => {
-  const { type, text, onClick } = props;
+  const { type, text, onClick, disabled } = props;
   const { Icon } = providers[type] ? providers[type] : {Icon: null};
   return (
-    <div className={cx('user-button', type)} onClick={onClick}>
+    <div className={cx('user-button', type)} onClick={!disabled ? onClick : null} disabled={disabled}>
       <div className="text">
         <span>{text}</span>
       </div>

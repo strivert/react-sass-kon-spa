@@ -2,8 +2,10 @@ import React from 'react';
 import cx from 'classnames';
 import './PanelPiece.scss';
 
-const PanelPiece = ({ children, className }) => (
-  <div className={cx('panel-piece', className)}>
+
+
+const PanelPiece = ({ children, className, styles }) => (
+  <div className={cx('panel-piece', className)} style={styles}>
     { children }
   </div>
 );

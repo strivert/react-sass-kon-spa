@@ -2,9 +2,9 @@ import React from 'react';
 import cx from 'classnames';
 import './TransDescPiece.scss';
 
-const TransDescPiece = ({title, cnt, emph, badge, className}) => {
+const TransDescPiece = ({title, cnt, emph, badge, className, styles}) => {
   return (
-    <div className={cx("trans-desc-panel", className)}>
+    <div className={cx("trans-desc-panel", className)} style={styles}>
       <div className="desc-title">
         {title}
       </div>

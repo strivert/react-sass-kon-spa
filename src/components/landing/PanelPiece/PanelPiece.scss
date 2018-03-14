@@ -12,7 +12,13 @@
   }
   &.glow-blue {
     background: #27313b;    
-  } 
+  }
+  
+  .video-size {
+    width: 102%;
+    height: 100%;
+    border-radius: 12px;
+  }
 
   .ratio-panel {
     color: rgb(170, 170, 170);
@@ -84,7 +90,7 @@
       position: relative;
       height: 100%;
       width: 100%;
-      .spiece-first {
+      .spiece-0 {
         width: 145px;
         height: 145px;
         background-color: #b4b4b4;
@@ -94,7 +100,7 @@
         top: 0px;
         left: 0px;
       } 
-      .spiece-second {
+      .spiece-1 {
         width: 161px;
         height: 161px;
         background-color: #bcb9b9;
@@ -102,9 +108,9 @@
         @include material-shadow(2);
         position: absolute;
         top: -8px;
-        left: 48px;
+        left: 88px;
       }
-      .spiece-third {
+      .spiece-2 {
         width: 176px;
         height: 176px;
         background-color: #c1bfbf;
@@ -112,9 +118,9 @@
         @include material-shadow(2);
         position: absolute;
         top: -15px;
-        left: 128px;
+        left: 176px;
       }
-      .spiece-forth {
+      .spiece-3 {
         width: 192px;
         height: 192px;
         background-color: #cccbcb;
@@ -122,9 +128,9 @@
         @include material-shadow(2);
         position: absolute;
         top: -23px;
-        left: 216px;
+        left: 256px;
       }
-      .spiece-fiveth {
+      .spiece-4 {
         width: 208px;
         height: 208px;
         background-color: #d8d8d8;
@@ -132,16 +138,16 @@
         @include material-shadow(2);
         position: absolute;
         top: -31px;
-        left: 312px;
+        left: 322px;
       }
       @include media("<medium") {
-        .spiece-first,
-        .spiece-second,
-        .spiece-third,
-        .spiece-forth {
+        .spiece-0,
+        .spiece-1,
+        .spiece-2,
+        .spiece-3 {
           display: none;
         }
-        .spiece-fiveth {
+        .spiece-4 {
           margin: auto;
           position: static;
         }
@@ -161,8 +167,8 @@
 
 @include media("<medium") {
   .panel-piece {
-    width: 300px;
-    height: 200px;
+    width: 320px;
+    height: 180px;
 
     margin: auto;
     margin-top: 60px;

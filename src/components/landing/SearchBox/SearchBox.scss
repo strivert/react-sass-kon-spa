@@ -1,5 +1,15 @@
 @import 'utils';
 
+.videoOverlay {
+  background: #FFF;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
 .search-panel {
   margin-top: 78px;
   padding-bottom: 120px;
@@ -37,7 +47,10 @@
     justify-content: space-between;
     input {
       padding: 10px;
-      font-size: 17px;
+      font-size: 24px;
+      margin-left: 8px;
+      margin-top: -1px;
+      letter-spacing: 0.3px;
       border: 0px solid grey;
       width: 100%;
       outline: none;
@@ -60,16 +73,16 @@
     font-size: 15px;
     
     .video-ques {
-      color: rgb(170,170,170);      
+      color: rgb(170,170,170);
     }
     .video-circle {
       background: #fc600f;
-      width: 12px;
-      height: 12px;
+      width: 10px;
+      height: 10px;
       border-radius: 100%;
       margin: auto;
       margin-left: 8px;
-      margin-right: 16px;
+      margin-right: 4px;
     }
     .yourself-ques {
       span {
@@ -78,7 +91,8 @@
     }
     .yourself-here {
       color: #fc600f;
-      text-decoration: underline;
+      border-bottom: 2px solid #fc600f;
+      font-family: 'Lato-Bold';
       cursor: pointer;
       margin-left: 4px;
     }

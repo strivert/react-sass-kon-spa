@@ -20,9 +20,14 @@
     background: #214eeb;
   }
 
-
+  &[disabled] {
+    background: #555;
+    color: #CCC;
+    cursor: wait;
+  }
   .text {
     font-size: 20px;
+    font-family: 'Lato-Bold';
   }  
   &.search {
     padding: 20px;

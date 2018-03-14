@@ -1,5 +1,15 @@
 @import 'utils';
 
+pre {
+  color: rgba(255, 255, 0, 0.9);
+  line-height: 20px;
+  margin-left: 33px;
+  &.comment {
+    color: #777;
+    line-height: 15px;
+  }
+}
+
 .flow-panel {
   position: relative;  
   & > :before {
@@ -31,6 +41,13 @@
       &.last {
         justify-content: center;        
       }
+    }
+
+    .spinner-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
     }
   }
 
