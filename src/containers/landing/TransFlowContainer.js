@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import TransFlow from 'components/landing/TransFlow';
+import React, { Component } from 'react'
+import TransFlow from 'components/landing/TransFlow'
 
 class TransFlowContainer extends Component {
-  render() {
+  render () {
     return (
-      <TransFlow {...this.props}  />
-    );
+      <TransFlow {...this.props} />
+    )
   }
 }
 
-export default TransFlowContainer;
+export default TransFlowContainer

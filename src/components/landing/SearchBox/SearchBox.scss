@@ -1,17 +1,7 @@
 @import 'utils';
 
-.videoOverlay {
-  background: #FFF;
-  top: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-}
-
 .search-panel {
-  margin-top: 78px;
+  margin-top: 74px;
   padding-bottom: 120px;
   position: relative;
 
@@ -71,6 +61,7 @@
     color: #ffffff;
     margin-top: 16px;
     font-size: 15px;
+    position: relative;
     
     .video-ques {
       color: rgb(170,170,170);
@@ -81,8 +72,9 @@
       height: 10px;
       border-radius: 100%;
       margin: auto;
-      margin-left: 8px;
-      margin-right: 4px;
+      margin-left: 9px;
+      margin-right: 6px;
+      margin-top: 5px;
     }
     .yourself-ques {
       span {

@@ -1,14 +1,14 @@
 // @flow
-import React, { Component } from 'react';
-import Header from 'components/base/Header';
+import React, { Component } from 'react'
+import Header from 'components/base/Header'
 
 class HeaderContainer extends Component {
-  render() {
+  render () {
     return (
       <Header
       />
-    );
+    )
   }
 }
 
-export default HeaderContainer;
+export default HeaderContainer

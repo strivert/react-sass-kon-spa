@@ -46,10 +46,24 @@
         // cursor: pointer;
 
         .intro-icon-wrapper {
-          width: 32px;
-          height: 32px;
+          width: 60px;
+          height: 60px;
           border-radius: 100%;
-          background-color: #27313b;
+          /* background-color: #27313b; */
+          background-size: 60px;
+          background-repeat: no-repeat;
+        }
+        .cloud {
+          background-image: url('../../../static/images/icon_cloud.png');
+        }
+        .whiteout {
+          background-image: url('../../../static/images/icon_whiteout.png');
+        }
+        .ml {
+          background-image: url('../../../static/images/icon_ml.png');
+        }
+        .search {
+          background-image: url('../../../static/images/icon_search.png');
         }
         .intro-name {
           font-size: 22px;

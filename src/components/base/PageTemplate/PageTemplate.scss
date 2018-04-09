@@ -8,6 +8,15 @@
   height: 656px;
   opacity: 1;
 
+  &.tall {
+    height: 756px;
+  }
+  
+  &.sdu {
+    background: none;
+    height: auto;
+  }
+
   @include media("<medium") {
     & {
       background: #27313c;

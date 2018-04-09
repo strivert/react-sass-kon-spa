@@ -1,11 +1,11 @@
-import React from 'react';
-import './PageIntro.scss';
+import React from 'react'
+import './PageIntro.scss'
 
 const PageIntro = () => (
-  <div className="page-intro">
-    <h1>Every asset you need for modern video</h1>
-    <p>A.i & transcoding services so good you want even know they are there.</p>
+  <div className='page-intro'>
+    <h1>A Powerfully Simple Video API</h1>
+    <p>Konch transcodes, transcribes, translates and distributes your video assets.</p>
   </div>
-);
+)
 
-export default PageIntro;
+export default PageIntro

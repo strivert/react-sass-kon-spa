@@ -6,6 +6,7 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    color: #ffffff;
     .brand {
       font-size: 24px;
       color: #ffffff;
@@ -26,8 +27,8 @@
       margin-left: auto;
       a {
         font-size: 16px;
-        color: #ffffff;
         margin-left: 24px;
+        cursor: pointer;
       }
     }
   }

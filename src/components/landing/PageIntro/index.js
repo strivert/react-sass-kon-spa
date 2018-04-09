@@ -1,1 +1,1 @@
-export { default } from './PageIntro';
+export { default } from './PageIntro'

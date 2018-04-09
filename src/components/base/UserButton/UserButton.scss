@@ -29,6 +29,15 @@
     font-size: 20px;
     font-family: 'Lato-Bold';
   }  
+
+  &.dashboard-plus {
+    padding: 10px 20px;
+    .text {
+      font-size: 16px;
+      font-family: 'Lato-Regular';
+      color: black;
+    }
+  }
   &.search {
     padding: 20px;
     padding-right: 0px;

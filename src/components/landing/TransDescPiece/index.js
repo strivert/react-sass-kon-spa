@@ -1,1 +1,1 @@
-export { default } from './TransDescPiece';
+export { default } from './TransDescPiece'
